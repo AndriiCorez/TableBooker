@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
+@property (nonatomic) AppDelegate *appDelegate;
 
 @end
 
@@ -16,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.appDelegate = [[UIApplication sharedApplication] delegate];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

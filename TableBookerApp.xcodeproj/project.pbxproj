@@ -15,6 +15,9 @@
 		413500591C3AAFC1005A956A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413500581C3AAFC1005A956A /* Images.xcassets */; };
 		4135005C1C3AAFC1005A956A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4135005A1C3AAFC1005A956A /* LaunchScreen.xib */; };
 		413500681C3AAFC1005A956A /* TableBookerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500671C3AAFC1005A956A /* TableBookerAppTests.m */; };
+		413500731C3ABD14005A956A /* Table.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500721C3ABD14005A956A /* Table.m */; };
+		413500761C3ABD15005A956A /* BookLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500751C3ABD15005A956A /* BookLog.m */; };
+		413500791C3ABD16005A956A /* Guest.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500781C3ABD16005A956A /* Guest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		413500611C3AAFC1005A956A /* TableBookerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableBookerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413500661C3AAFC1005A956A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413500671C3AAFC1005A956A /* TableBookerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableBookerAppTests.m; sourceTree = "<group>"; };
+		413500711C3ABD14005A956A /* Table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
+		413500721C3ABD14005A956A /* Table.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Table.m; sourceTree = "<group>"; };
+		413500741C3ABD15005A956A /* BookLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookLog.h; sourceTree = "<group>"; };
+		413500751C3ABD15005A956A /* BookLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookLog.m; sourceTree = "<group>"; };
+		413500771C3ABD16005A956A /* Guest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guest.h; sourceTree = "<group>"; };
+		413500781C3ABD16005A956A /* Guest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,12 @@
 				413500581C3AAFC1005A956A /* Images.xcassets */,
 				4135005A1C3AAFC1005A956A /* LaunchScreen.xib */,
 				4135004F1C3AAFC1005A956A /* TableBookerApp.xcdatamodeld */,
+				413500771C3ABD16005A956A /* Guest.h */,
+				413500781C3ABD16005A956A /* Guest.m */,
+				413500741C3ABD15005A956A /* BookLog.h */,
+				413500751C3ABD15005A956A /* BookLog.m */,
+				413500711C3ABD14005A956A /* Table.h */,
+				413500721C3ABD14005A956A /* Table.m */,
 				413500481C3AAFC0005A956A /* Supporting Files */,
 			);
 			path = TableBookerApp;
@@ -224,7 +239,10 @@
 			files = (
 				4135004E1C3AAFC1005A956A /* AppDelegate.m in Sources */,
 				4135004B1C3AAFC1005A956A /* main.m in Sources */,
+				413500791C3ABD16005A956A /* Guest.m in Sources */,
 				413500541C3AAFC1005A956A /* ViewController.m in Sources */,
+				413500761C3ABD15005A956A /* BookLog.m in Sources */,
+				413500731C3ABD14005A956A /* Table.m in Sources */,
 				413500511C3AAFC1005A956A /* TableBookerApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

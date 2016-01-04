@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Guest.h"
+#import "Table.h"
+#import "BookLog.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //Initialize Core Data instances
+    [self managedObjectModel];
+    [self persistentStoreCoordinator];
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    NSAssert(moc != nil, @"Error with MOC initialization");
     return YES;
 }
 
@@ -42,6 +49,29 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+#pragma mark - Managed Object
+
+- (Guest *) createGuestMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    
+    Guest *guestMO = [NSEntityDescription insertNewObjectForEntityForName:@"Guest" inManagedObjectContext:moc];
+    return guestMO;
+}
+
+- (Table *) createTableMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    
+    Table *tableMO = [NSEntityDescription insertNewObjectForEntityForName:@"Table" inManagedObjectContext:moc];
+    return tableMO;
+}
+
+- (BookLog *) createBookLogMO{
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    
+    BookLog *bookMO = [NSEntityDescription insertNewObjectForEntityForName:@"BookLog" inManagedObjectContext:moc];
+    return bookMO;
 }
 
 #pragma mark - Core Data stack
