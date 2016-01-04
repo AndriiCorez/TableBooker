@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Guest.h"
+#import "Table.h"
+#import "BookLog.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,6 +20,9 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+- (Guest *) createGuestMO;
+- (Table *) createTableMO;
+- (BookLog *) createBookLogMO;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
