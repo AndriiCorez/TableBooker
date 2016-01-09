@@ -15,4 +15,7 @@
 @dynamic table_capacity;
 @dynamic booking;
 
+
+
+
 @end

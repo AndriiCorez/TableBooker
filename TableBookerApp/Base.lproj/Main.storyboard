@@ -47,25 +47,56 @@
                                     <action selector="reserveBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bc9-qz-IiG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHQ-vA-yZK">
-                                <rect key="frame" x="25" y="465" width="279" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mo-JZ-D5z">
+                                <rect key="frame" x="16" y="353" width="288" height="195"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-pN-ABf">
+                                <rect key="frame" x="198" y="269" width="106" height="30"/>
+                                <state key="normal" title="Delete Guests">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFt-5r-rI8"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68g-ss-3F9">
+                                <rect key="frame" x="-76" y="99" width="320" height="162"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="btnDeleteGuests" destination="9Bb-pN-ABf" id="poH-CU-8U6"/>
                         <outlet property="btnReserve" destination="rUL-gQ-OlK" id="pLW-OZ-rOV"/>
                         <outlet property="guestNameInput" destination="CQN-S6-asC" id="5qE-3e-hLN"/>
                         <outlet property="guestQuantityInput" destination="Ip8-hj-e0k" id="Rxk-tW-mFH"/>
-                        <outlet property="outputLabel" destination="iHQ-vA-yZK" id="WDf-Ds-RNW"/>
+                        <outlet property="outputText" destination="7mo-JZ-D5z" id="dl6-tD-h1K"/>
+                        <outlet property="tableWheel" destination="68g-ss-3F9" id="3n8-xO-5Qj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dbw-Se-hHQ">
+            <objects>
+                <viewController id="k2h-Pg-epj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5qA-qb-JHn"/>
+                        <viewControllerLayoutGuide type="bottom" id="F5J-W5-Cmx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LrX-uG-8hW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVJ-LT-l5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

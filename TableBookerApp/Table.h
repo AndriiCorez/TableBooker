@@ -15,5 +15,6 @@
 @property (nonatomic, retain) NSNumber * table_number;
 @property (nonatomic, retain) NSNumber * table_capacity;
 @property (nonatomic, retain) NSManagedObject *booking;
+@property (nonatomic, weak) NSArray *tablesArray;
 
 @end

@@ -18,6 +18,7 @@
 		413500731C3ABD14005A956A /* Table.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500721C3ABD14005A956A /* Table.m */; };
 		413500761C3ABD15005A956A /* BookLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500751C3ABD15005A956A /* BookLog.m */; };
 		413500791C3ABD16005A956A /* Guest.m in Sources */ = {isa = PBXBuildFile; fileRef = 413500781C3ABD16005A956A /* Guest.m */; };
+		417A90E51C4146E00024C940 /* PickerViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 417A90E41C4146E00024C940 /* PickerViewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		413500751C3ABD15005A956A /* BookLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookLog.m; sourceTree = "<group>"; };
 		413500771C3ABD16005A956A /* Guest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guest.h; sourceTree = "<group>"; };
 		413500781C3ABD16005A956A /* Guest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guest.m; sourceTree = "<group>"; };
+		417A90E31C4146E00024C940 /* PickerViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewHelper.h; sourceTree = "<group>"; };
+		417A90E41C4146E00024C940 /* PickerViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				4135004D1C3AAFC1005A956A /* AppDelegate.m */,
 				413500521C3AAFC1005A956A /* ViewController.h */,
 				413500531C3AAFC1005A956A /* ViewController.m */,
+				417A90E31C4146E00024C940 /* PickerViewHelper.h */,
+				417A90E41C4146E00024C940 /* PickerViewHelper.m */,
 				413500551C3AAFC1005A956A /* Main.storyboard */,
 				413500581C3AAFC1005A956A /* Images.xcassets */,
 				4135005A1C3AAFC1005A956A /* LaunchScreen.xib */,
@@ -243,6 +248,7 @@
 				413500541C3AAFC1005A956A /* ViewController.m in Sources */,
 				413500761C3ABD15005A956A /* BookLog.m in Sources */,
 				413500731C3ABD14005A956A /* Table.m in Sources */,
+				417A90E51C4146E00024C940 /* PickerViewHelper.m in Sources */,
 				413500511C3AAFC1005A956A /* TableBookerApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +442,7 @@
 				4135006D1C3AAFC1005A956A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4135006E1C3AAFC1005A956A /* Build configuration list for PBXNativeTarget "TableBookerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				413500701C3AAFC1005A956A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
