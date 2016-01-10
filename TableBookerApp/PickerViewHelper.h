@@ -10,4 +10,9 @@
 
 @interface PickerViewHelper : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
+-(void)setArray:(NSArray*)array;
+-(void)addItemToArray:(NSObject*)item;
+-(NSObject*)getItemFromArray:(NSUInteger)index;
+
+
 @end

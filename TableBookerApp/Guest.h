@@ -14,7 +14,7 @@
 @interface Guest : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * guests_quantity;
+@property (nonatomic, retain) NSString * guests_quantity;
 @property (nonatomic, retain) NSString * notes;
 @property (nonatomic, retain) BookLog *booking;
 

@@ -6,19 +6,19 @@
         <relationship name="table" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Table" inverseName="booking" inverseEntity="Table" syncable="YES"/>
     </entity>
     <entity name="Guest" representedClassName="Guest" syncable="YES">
-        <attribute name="guests_quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="guests_quantity" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="booking" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BookLog" inverseName="guest" inverseEntity="BookLog" syncable="YES"/>
     </entity>
     <entity name="Table" representedClassName="Table" syncable="YES">
-        <attribute name="table_capacity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="table_number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="table_capacity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="table_number" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="booking" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BookLog" inverseName="table" inverseEntity="BookLog" syncable="YES"/>
     </entity>
     <elements>
+        <element name="BookLog" positionX="97" positionY="-79" width="128" height="88"/>
         <element name="Guest" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="Table" positionX="259" positionY="-7" width="128" height="88"/>
-        <element name="BookLog" positionX="97" positionY="-79" width="128" height="88"/>
     </elements>
 </model>

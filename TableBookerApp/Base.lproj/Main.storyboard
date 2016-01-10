@@ -21,13 +21,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsI-b1-VkT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsI-b1-VkT">
                                 <rect key="frame" x="16" y="32" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guests quantity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvl-Yl-QtG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guests quantity:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvl-Yl-QtG">
                                 <rect key="frame" x="16" y="75" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -39,7 +39,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUL-gQ-OlK">
-                                <rect key="frame" x="125" y="269" width="71" height="30"/>
+                                <rect key="frame" x="58" y="438" width="71" height="30"/>
                                 <state key="normal" title="Reserve">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,14 +47,14 @@
                                     <action selector="reserveBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bc9-qz-IiG"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mo-JZ-D5z">
-                                <rect key="frame" x="16" y="353" width="288" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="To reserve a table, please specify name, quantity of persons, select table and time" translatesAutoresizingMaskIntoConstraints="NO" id="7mo-JZ-D5z">
+                                <rect key="frame" x="21" y="491" width="288" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-pN-ABf">
-                                <rect key="frame" x="198" y="269" width="106" height="30"/>
+                                <rect key="frame" x="157" y="438" width="106" height="30"/>
                                 <state key="normal" title="Delete Guests">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -62,39 +62,49 @@
                                     <action selector="deleteBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFt-5r-rI8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Table number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-eo-3Bx">
+                                <rect key="frame" x="16" y="119" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="fuB-S6-FTK">
+                                <rect key="frame" x="0.0" y="260" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="474128270.36579502">
+                                    <!--2016-01-10 14:17:50 +0000-->
+                                </date>
+                            </datePicker>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68g-ss-3F9">
-                                <rect key="frame" x="-76" y="99" width="320" height="162"/>
+                                <rect key="frame" x="182" y="102" width="100" height="162"/>
                             </pickerView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Notes" translatesAutoresizingMaskIntoConstraints="NO" id="xbJ-83-Szn">
+                                <rect key="frame" x="16" y="148" width="158" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="btnDeleteGuests" destination="9Bb-pN-ABf" id="poH-CU-8U6"/>
                         <outlet property="btnReserve" destination="rUL-gQ-OlK" id="pLW-OZ-rOV"/>
+                        <outlet property="dateTime" destination="fuB-S6-FTK" id="azS-8T-ySc"/>
                         <outlet property="guestNameInput" destination="CQN-S6-asC" id="5qE-3e-hLN"/>
                         <outlet property="guestQuantityInput" destination="Ip8-hj-e0k" id="Rxk-tW-mFH"/>
+                        <outlet property="notesGuest" destination="xbJ-83-Szn" id="CjO-mc-xaD"/>
                         <outlet property="outputText" destination="7mo-JZ-D5z" id="dl6-tD-h1K"/>
                         <outlet property="tableWheel" destination="68g-ss-3F9" id="3n8-xO-5Qj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="128"/>
+            <point key="canvasLocation" x="-124" y="128"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dbw-Se-hHQ">
             <objects>
-                <viewController id="k2h-Pg-epj" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5qA-qb-JHn"/>
-                        <viewControllerLayoutGuide type="bottom" id="F5J-W5-Cmx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LrX-uG-8hW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
+                <viewController id="k2h-Pg-epj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVJ-LT-l5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
